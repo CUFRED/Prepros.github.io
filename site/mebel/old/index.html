@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="favicon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon-114x114.png">
+	
+	<link rel="stylesheet" href="css/style.css">
+	
+	<meta name="theme-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	
+	<meta name="skype_toolbar" content="skype_toolbar_parset_compatible">
+
+	<script src="js/libs-top.min.js"></script>
+</head>
+<body>
+	<!--[if lt IE 8]>
+		<div class="browsehap1py">
+			Простите мы сожалеем, но Вы используете <strong>устаревший</strong> браузер <br><br><br>
+			Пожалуйста <a href="http://browsehappy.com/">обновите</a> его.
+		</div>
+	<![endif]-->
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="row">
+					<a class="logo" href="#">
+						<div class="logo__wrapp">
+						<img class="logo__pic" src="img/logo.png" alt="Мебельный Мастер">
+						<span class="logo__text">Мебельный Мастер</span>
+						</div>
+					</a>
+					<nav class="header__nav">
+						<label class="burger" for="toggler">
+							<span class="divide"></span>
+							<span class="divide"></span>
+							<span class="divide"></span>
+						</label>
+						<ul class="nav">
+							<li class="nav__item nav__item--active">
+								<a class="nav__link" href="#">
+									<i class="glyphicon glyphicon-bed"></i>
+									Мебель
+								</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">
+									<i class="fa fa-braille"></i>
+									Изделия из стекла
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header__phone">
+						<div class="phone">
+							<span class="phone__text">
+								<small class="phone__small">+7 (777)</small>
+								<strong class="phone__strong">777 77 77</strong>
+								<i class="fa fa-volume-control-phone"></i>
+							</span>
+							<a class="btn btn--phone">Перезвоните мне</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="header__nav--sm">
+				<input id="toggler" class="toggler" type="checkbox">
+				<ul class="nav nav--sm">
+					<li class="nav__item nav__item--active">
+						<a class="nav__link" href="#">
+							<i class="glyphicon glyphicon-bed"></i>
+							Мебель
+						</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#">
+							<i class="fa fa-braille"></i>
+							Изделия из стекла
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="page-landing">
+			<section class="slider">
+				<div class="slider__container">
+					<div class="slider__bg"  style="background: url('img/slide--bg.png') no-repeat center bottom;">
+						<div class="about">
+							<h1 class="about__title">Мебель, от которой все будут <br>в восторге по доступной цене</h1>
+							<h3 class="about__title about__title--small">от идеи до реализации</h3>
+							<div class="separator"></div>
+							<p class="about__text">Создаем комфортную атмосферу <br>в Вашей жизни</p>
+							<a class="btn btn--about" href="#">Посмотреть работы</a>
+						</div>
+						<img class="slider__img" src="img/slide--people.png" alt="">
+					</div>
+				</div>
+			</section>
+			<section class="action">
+				<div class="action__container">
+					<div class="box">
+						<div class="row">
+							<div class="action__desc">
+								<h2 class="action__title">Бесплатно!</h2>
+								<p class="action__text">вызови замерщика и получи 15% скидки</p>
+							</div>
+							<div class="action__time">
+								<div id="countdown"></div>
+								<ul class="action__list">
+									<li class="action__item">Дни</li>
+									<li class="action__item">Часы</li>
+									<li class="action__item">Минуты</li>
+									<li class="action__item">Секунды</li>
+								</ul>
+							</div>
+						</div>
+						<div class="row ruler">
+							<form class="register" action="">
+								<input class="register__name" type="text" placeholder="Имя">
+								<input class="register__phone" type="tel" placeholder="Телефон">
+								<input class="btn btn--warning" type="submit" value="Получить скидку">
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</div>
+	<footer class="footer">
+		Подвал
+	</footer>
+
+	<script src="js/libs-bottom.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
